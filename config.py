@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from os import getenv
 
 class Config:
@@ -9,8 +10,13 @@ class DevelopmentConfig(Config):
     FLASK_ENV = 'development'
     DEBUG = True
 
+class TestingConfig(Config):
+    FLASK_ENV = 'testing'
+    TESTING = True
+
 
 config = {
     'development': DevelopmentConfig,
+    'testing': TestingConfig,
     'default': DevelopmentConfig
 }

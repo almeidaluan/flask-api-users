@@ -9,7 +9,7 @@ class Index(Resource):
     def get(self):
         # retornamos um simples dicionario que sera automaticamente
         #retornado em json pelo flask
-        return  {'hello': 'world by apps'}
+        return {'hello': 'world by apps'}
 
 # Instânciamos a API do FlaskRestful
 api = Api()
