@@ -16,6 +16,7 @@ def test_index_response_200(client):
     # o teste
     assert response.status_code == 200
 
+
 def test_home_response_hello(client):
     """
     **Given** Luiza está acessando a API,
@@ -34,4 +35,5 @@ def test_home_response_hello(client):
     data = json.loads(response.data.decode('utf-8'))
 
     # Fazemos o teste de asserção pela chave 'hello'
+
     assert data['hello'] == 'world by apps'

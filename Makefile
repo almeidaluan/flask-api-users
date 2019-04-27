@@ -25,6 +25,7 @@ clean-build:
 	rm --force --recursive build/
 	rm --force --recursive dist/
 	rm --force --recursive *.egg-info
+	rm --force --recursive .pytest_cache
 
 isort:
 	sh -c "isort --skip-glob=.tox --recursive . "
