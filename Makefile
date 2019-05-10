@@ -36,5 +36,4 @@ lint: clean
 test: lint
 	pytest --verbose --color=yes $(TEST_PATH)
 
-run: test
-	python application.py
+run: python application.py
