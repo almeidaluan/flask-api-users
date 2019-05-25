@@ -23,3 +23,7 @@ nascimento, cores, datas e etc..
 
 **gunicorn** - é responsável por servir um servidor http utilizando o wsgi.
 
+
+### Executando o projeto
+
+- Criar o arquivo .env que é uma copia do .env-example e dar o comando flask run
